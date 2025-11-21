@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Країни світу — коди, валюти, мови</title>
+    <title>Currency, language</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,15 +15,19 @@
         body::selection {
             background-color: #004f63;
         }
-        h1 {
+        h1, h2 {
             text-align: center;
-            color: #60a5fa;
+            color: #00a5ce;
             margin-bottom: 30px;
-            font-size: 2.2rem;
+            font-size: 1.7rem;
+        }
+
+        h2 {
+            margin-top: 100px;
         }
         table {
             width: 100%;
-            max-width: 1400px;
+            max-width: 1100px;
             margin: 0 auto;
             border-collapse: collapse;
             background-color: #1e293b;
@@ -32,16 +36,14 @@
             overflow: hidden;
         }
         th {
-            background-color: #001d6d;
-            color: white;
             padding: 16px 12px;
             text-align: center;
-            font-weight: 600;
-            font-size: 1.05rem;
+            font-weight: 400;
+            font-size: 1.0rem;
             letter-spacing: 0.5px;
         }
         td {
-            padding: 12px 10px;
+            padding: 8px 10px;
             text-align: left;
             border-bottom: 1px solid #334155;
             font-size: 0.95rem;
@@ -53,7 +55,7 @@
             background-color: #162033;
         }
         tr:hover {
-            background-color: #000;
+            background-color: #05101d;
             transition: background-color 0.3s ease;
         }
         
@@ -91,16 +93,64 @@
     </style>
 </head>
 <body>
-    <h1>Країни світу: коди, офіційні мови та валюти</h1>
+
+<h1>Поточні ГЕО</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Мовний тег</th>
+            <th>Країна (укр)</th>
+            <th>Країна (локальна мова)</th>
+            <th>Офіційна мова</th>
+            <th>Позначення валюти</th>
+            <th>Назва валюти</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>en-GB</td><td>Велика Британія</td><td>United Kingdom</td><td>англійська</td><td>GBP, £</td><td>фунт стерлінгів</td></tr>
+        <tr><td>el-GR</td><td>Греція</td><td>Ελλάδα (Elláda)</td><td>грецька</td><td>€, EUR</td><td>євро</td></tr>
+        <tr><td>ro-RO</td><td>Румунія</td><td>România</td><td>румунська</td><td>RON, lei</td><td>румунський лей</td></tr>
+        <tr><td>sl-SI</td><td>Словенія</td><td>Slovenija</td><td>словенська</td><td>€, EUR</td><td>євро</td></tr>
+        <tr><td>de-AT</td><td>Австрія</td><td>Österreich</td><td>німецька</td><td>€, EUR</td><td>євро</td></tr>
+        <tr><td>pt-PT</td><td>Португалія</td><td>Portugal</td><td>португальська</td><td>€, EUR</td><td>євро</td></tr>
+        <tr><td>de-CH</td><td>Швейцарія</td><td>Schweiz</td><td>німецька, французька, італійська, ретороманська</td><td>CHF, Fr</td><td>швейцарський франк</td></tr>
+        <tr><td>es-MX</td><td>Мексика</td><td>México</td><td>іспанська</td><td>MXN, $</td><td>мексиканське песо</td></tr>
+        <tr><td>es-AR</td><td>Аргентина</td><td>Argentina</td><td>іспанська</td><td>ARS, $</td><td>аргентинське песо</td></tr>
+        <tr><td>es-CL</td><td>Чилі</td><td>Chile</td><td>іспанська</td><td>CLP, $</td><td>чилійське песо</td></tr>
+        <tr><td>hr-HR</td><td>Хорватія</td><td>Hrvatska</td><td>хорватська</td><td>€, EUR</td><td>євро</td></tr>
+        <tr><td>en-AU</td><td>Австралія</td><td>Australia</td><td>англійська</td><td>AUD, A$</td><td>австралійський долар</td></tr>
+        <tr><td>en-NZ</td><td>Нова Зеландія</td><td>New Zealand</td><td>англійська</td><td>NZD, $</td><td>новозеландський долар</td></tr>
+        <tr><td>en-CA</td><td>Канада</td><td>Canada</td><td>англійська, французька</td><td>CAD, C$</td><td>канадський долар</td></tr>
+        <tr><td>nl-NL</td><td>Нідерланди</td><td>Nederland</td><td>нідерландська</td><td>€, EUR</td><td>євро</td></tr>
+        <tr><td>nl-BE</td><td>Бельгія</td><td>België</td><td>нідерландська, французька, німецька</td><td>€, EUR</td><td>євро</td></tr>
+        <tr><td>sv-SE</td><td>Швеція</td><td>Sverige</td><td>шведська</td><td>SEK, kr</td><td>шведська крона</td></tr>
+        <tr><td>cs-CZ</td><td>Чехія</td><td>Česko</td><td>чеська</td><td>CZK, Kč</td><td>чеська крона</td></tr>
+        <tr><td>en-IE</td><td>Ірландія</td><td>Ireland</td><td>англійська</td><td>€, EUR</td><td>євро</td></tr>
+        <tr><td>is-IS</td><td>Ісландія</td><td>Ísland</td><td>ісландська</td><td>ISK, kr</td><td>ісландська крона</td></tr>
+        <tr><td>en-PH</td><td>Філіппіни</td><td>Pilipinas</td><td>філіппінська, англійська</td><td>PHP, ₱</td><td>філіппінське песо</td></tr>
+        <tr><td>fr-FR</td><td>Франція</td><td>France</td><td>французька</td><td>€, EUR</td><td>євро</td></tr>
+        <tr><td>de-DE</td><td>Німеччина</td><td>Deutschland</td><td>німецька</td><td>€, EUR</td><td>євро</td></tr>
+        <tr><td>it-IT</td><td>Італія</td><td>Italia</td><td>італійська</td><td>€, EUR</td><td>євро</td></tr>
+        <tr><td>es-ES</td><td>Іспанія</td><td>España</td><td>іспанська</td><td>€, EUR</td><td>євро</td></tr>
+        <tr><td>nb-NO</td><td>Норвегія</td><td>Norge</td><td>норвезька (букмол)</td><td>NOK, kr</td><td>норвезька крона</td></tr>
+        <tr><td>lv-LV</td><td>Латвія</td><td>Latvija</td><td>латвійська</td><td>€, EUR</td><td>євро</td></tr>
+        <tr><td>bg-BG</td><td>Болгарія</td><td>България (Bǎlgariya)</td><td>болгарська</td><td>BGN, лв</td><td>болгарський лев</td></tr>
+        <tr><td>sk-SK</td><td>Словаччина</td><td>Slovensko</td><td>словацька</td><td>€, EUR</td><td>євро</td></tr>
+        <tr><td>hu-HU</td><td>Угорщина</td><td>Magyarország</td><td>угорська</td><td>HUF, Ft</td><td>угорський форинт</td></tr>
+    </tbody>
+    </table>
+
+    <h2>Країни світу: коди, офіційні мови та валюти</h2>
 
     <table>
     <tr>
-        <td>Код</td>
-        <td>Країна (англійська)</td>
-        <td>Країна (українська)</td>
-        <td>Офіційна мова</td>
-        <td>Позначення валюти</td>
-        <td>Назва валюти (локальна та українською)</td>
+        <th>Код</th>
+        <th>Країна (англ)</th>
+        <th>Країна (укр)</th>
+        <th>Офіційна мова</th>
+        <th>Позначення валюти</th>
+        <th>Назва валюти</th>
     </tr>
     <tr>
         <td>AD</td>
@@ -1674,7 +1724,7 @@
         <td>SE</td>
         <td>Sweden</td>
         <td>Швеція</td>
-        <td>шводитька</td>
+        <td>швецька</td>
         <td>SEK, kr</td>
         <td>шведська крона</td>
     </tr>
